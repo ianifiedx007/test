@@ -22,7 +22,7 @@ if (loginForm) {
             return;
         }
         try {
-            const response = yield fetch("http://3.107.199.165/auth/login_process", {
+            const response = yield fetch("https://3.107.199.165/auth/login_process", {
                 method: "POST",
                 headers: { "Content-Type": "application/x-www-form-urlencoded" },
                 body: `email=${encodeURIComponent(email)}&password=${encodeURIComponent(password)}`
@@ -56,7 +56,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 return;
             }
             try {
-                const response = yield fetch("http://3.107.199.165/jobs/post_job", {
+                const response = yield fetch("https://3.107.199.165/jobs/post_job", {
                     method: "POST",
                     headers: { "Content-Type": "application/x-www-form-urlencoded" },
                     body: new URLSearchParams({ title, description }).toString(),
