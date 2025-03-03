@@ -16,7 +16,7 @@ if (loginForm) {
         }
 
         try {
-            const response = await fetch("http://localhost:8080/auth/login_process", {
+            const response = await fetch("http://3.107.199.165/auth/login_process", {
                 method: "POST",
                 headers: { "Content-Type": "application/x-www-form-urlencoded" },
                 body: `email=${encodeURIComponent(email)}&password=${encodeURIComponent(password)}`
@@ -54,7 +54,7 @@ document.addEventListener("DOMContentLoaded", () => {
             }
 
             try {
-                const response = await fetch("http://localhost:8080/jobs/post_job", {
+                const response = await fetch("http://3.107.199.165/jobs/post_job", {
                     method: "POST",
                     headers: { "Content-Type": "application/x-www-form-urlencoded" },
                     body: new URLSearchParams({ title, description }).toString(),
