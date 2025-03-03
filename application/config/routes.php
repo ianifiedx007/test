@@ -55,3 +55,4 @@ $route['default_controller'] = 'auth';
 $route['auth/login'] = 'auth/login';
 $route['auth/login_process'] = 'auth/login_process';
 $route['auth/logout'] = 'auth/logout';
+$route['jobseeker/dashboard'] = 'jobseeker/dashboard';
