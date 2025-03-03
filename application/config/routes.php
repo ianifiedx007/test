@@ -57,3 +57,6 @@ $route['auth/login_process'] = 'auth/login_process';
 $route['auth/logout'] = 'auth/logout';
 $route['jobseeker/dashboard'] = 'JobSeeker/dashboard';
 $route['jobseeker'] = 'JobSeeker/dashboard';
+$route['jobmoderator/dashboard'] = 'JobModerator/dashboard';
+$route['jobmoderator'] = 'JobModerator/dashboard';
+$route['job-poster/dashboard'] = 'JobPoster/dashboard';
